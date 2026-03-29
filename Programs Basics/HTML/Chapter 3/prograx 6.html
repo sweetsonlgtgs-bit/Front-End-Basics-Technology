@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legend</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .left{
+            background-color: #2196F3;
+            padding: 20px;
+            float: left;
+            width: 20%;/*the width is 20%,by default*/
+        }
+        .main{
+            background-color: #f1f1f1;
+            padding: 20px;
+            float: left;
+            width: 60%;/*the width is 60% by default*/
+        }
+        .right{
+            background-color: #04aa6d;
+            padding: 20px;
+            float: left;
+            width: 20%;/*the width is 20% by default*/
+        }
+        /*use a media query to add a break point at 800px:*/
+        @media screen and (max-width: 800px){
+            .left,.main,.right{
+                width: 100%;/*the width is 100% when the viewport is 800px or smaller*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Media Queries</h2>
+    <p>Resize the browser window.</p>
+    <p>
+        make sure you reach the breakpoint at 800px when resizing this frame.
+    </p>
+    <div class="left">
+        <p>Left Menu</p>
+    </div>
+    <div class="main">
+        <p>main</p>
+    </div>
+    <div class="right">
+        <p>Right Menu</p>
+    </div>
+</body>
+</html>
