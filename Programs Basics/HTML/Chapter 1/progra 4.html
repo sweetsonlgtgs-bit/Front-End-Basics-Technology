@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /*this style sets the width of all images to 100% */
+            img {
+                width:100%;
+            }
+        </style>
+        <body>
+            <h2>width/height attributes or style?
+                <p>the first image uses the width attribute (set to 128 pixels) but the style in the 
+                    head section overrides it and sets the width to 100% .
+                </p>
+                <img src="pro.jpeg" alt="pro" width="128" height="128">
+                <p>the second image uses the style attribute to set the width to 128 pixels , this will 
+                    not be overritten by the style in the head section:
+                </p>
+                <img src="pro.jpeg" alt="pro" style=width:"128px" height:"128px">
+            </h2>
+        </body>
+    </head>
+</html>
