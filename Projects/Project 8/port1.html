@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: powderblue;
+        }
+        img{
+            width: 100%;
+            height: 350px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active){
+            background-color: #111;
+        }
+        .active{
+            background-color: #04AA6D;
+        }
+        .column{
+            float: left;
+            padding: 10px;
+        }
+        .column.middle{
+            width:50%;
+        }
+        .column.side{
+            width: 25%;
+        }
+        row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            background-color: lightskyblue; 
+            margin-top: 20%;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li style="float: right;"><a class="active" href="#About">About</a></li>
+    </ul>
+    <img src="fuse.jpg">
+    <div class="row">
+        <div class="column side">
+                <h2>Trending</h2>
+                <p style="text-align: justify;">Mixing and matching different styles (e.g., pairing a blazer with a graphic tee) allows 
+                for a personalized and adaptable wardrobe.Focuses on casual, comfortable clothing with a modern edge.
+                Combines athletic wear with everyday clothing for a relaxed and stylish look.
+                A mix of formal and casual elements, suitable for professional settings.</p>
+        </div>
+        <div class="column middle">
+                <h2>Mens fashion</h2>
+                <p style="text-align: justify;">Men's fashion encompasses a wide range of clothing and accessories designed for men, evolving alongside
+                societal changes and personal expression. It includes everything from casual streetwear to formal attire,
+                with a growing emphasis on versatility and individual style. Understanding fit, details, and the power of
+                accessories are key to developing a personal and fashionable wardrobe.
+                Don't be afraid to try new trends, colors, and patterns to discover what works best for your style.
+                Belts, shoes, watches, and other accessories can elevate an outfit and add a personal touch.
+                The type of fabric can significantly impact the overall look and feel of an outfit.
+                Inspired by classic looks from the past.Combines athletic wear with everyday clothing for a relaxed and stylish look.</p>
+        </div>
+        <div class="column side">
+                <h2>Stylish</h2>
+                <p style="text-align: justify;">Well-fitted clothes, regardless of brand, contribute to a polished look.
+                Ultimately, confidence in what you wear is a crucial element of men's fashion.
+                Mixing and matching different styles (e.g., pairing a blazer with a graphic tee) allows 
+                for a personalized and adaptable wardrobe.Focuses on casual, comfortable clothing with a modern edge.</p>
+        </div>
+    </div>
+    <div>
+    <div class="footer">
+        <h2 style="float: left; margin-left: 1%;margin-top: 3%;">Its Me @Legend Galaxy </h2>
+        <h2 style="float: right;margin-right: 1%;height: 0%;margin-top: 3%;">Contact:9751847914 </h2><br>
+        <h1 style="text-align: center;margin-right: 1%;margin-top: 1%;"><i>Thank You</i></h1>
+    </div>
+</body>
+</html>

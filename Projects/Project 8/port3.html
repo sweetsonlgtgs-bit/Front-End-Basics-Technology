@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover</title>
+    <style>
+        .header{
+            border: solid black 3px;
+            border-radius: 2px;
+            background-color: skyblue;
+            text-align: center;
+        }
+        body{
+            background-color: cadetblue;
+        }
+        .goat3{
+            width: 49%;
+            display: inline-block;
+            background-color:skyblue;
+            border: solid red 2px;
+            margin-top: 1%;
+            text-align: center;
+            height: 550px;
+            margin-top: 1%;
+        }
+        img:hover{
+            opacity: 1.0;
+            cursor: pointer;
+        }
+        .img1{
+            opacity: 0.5;
+        }
+        .img2{
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <h2>Image Hover</h2>
+    </div>
+    <div class="goat3">
+         <img class="img2" src="pot.jpg" style="inline-size: 98%;height: 500px;"><br>
+         <h4 style="text-align: left;margin-top: 1%;text-align: center;">Hovering Effect Of Image {Opacity:0.5}</h4>
+    </div>
+    <div class="goat3">
+         <img class="img1" src="pot1.jpg" style="inline-size: 98%;height: 500px;"><br>
+         <h4 style="text-align: left;margin-top: 1%;text-align: center;">Hovering Effect Of Image {Opacity:0.6}</h4>
+    </div>
+</body>
+</html>
