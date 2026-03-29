@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>legend</title>
+    <style>
+        #myheader{
+            background-color: lightblue;
+            color: red;
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Using id attribute in javascript</h2>
+    <p>javascript can access an element with a specified id by Using the getElementById() method:</p>
+    <h1 id="myheader">Hello World</h1>
+    <!-- <div id="myheader"><h1>Hello World</h1></div> -->
+    <button onclick="displayResult()">Change Text</button>
+    <script>
+        function displayResult(){
+            document.getElementById("myheader").innerHTML="Have A Nice Day!";
+        }
+    </script>
+</body>
+</html>
