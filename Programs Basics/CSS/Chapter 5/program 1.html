@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legend</title>
+    <style>
+        *{
+           box-sizing: border-box; 
+        }
+        body{
+            margin: 0;
+        }
+        /*style the header*/
+        .header{
+            height: 300px;
+            background-color: green;
+            padding: 20px;
+            text-align: center;
+            background-image: url(xpx12.jpg);
+            width: 100%;
+            /* width: 550px; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* position: relative; */
+        }
+        /*style the top navigation bar*/
+        .topnav{
+            overflow: hidden;
+            background-color: rosybrown;
+        }
+        /*style the topnav links*/
+        .topnav a{
+            float: left;
+            display: block;
+            color: blueviolet;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*change color on hover*/
+        .topnav a:hover{
+            background-color: brown;
+            color: black;
+        }
+        /*create three unequal columns that floats next to each other*/
+        .column{
+            float: left;
+            padding: 10px;
+        }
+        /*left and right column*/
+        .column.side{
+            width: 25%;
+        }
+        /*middle column*/
+        .column.middle{
+            width: 50%;
+        }
+        /*clear floats after the columns*/
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /*Responsive Layout*/
+        @media screen and (max-width:600px){
+        .column.side,.column.middle{
+        width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Software</h1>
+        <p>Resize the browser window to see the Responsive effect</p>
+    </div>
+    <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h2>Side</h2>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+        </div>
+        <div class="column middle">
+            <h2>Main Content</h2>
+            <p>Double hung windows consist of pair of shutters attached to one frame. The shutters are arranged one above the other.
+                These two shutters can slide vertically with in the frame. So, we can open the windows on top or at bottom to our required level.To
+                operate the double hung windows, a chain or cord consisting metal weights is metal provided which is connected over pulleys. So, by
+                pulling the weights of cord the shutters can move vertically. Then we can fix the windows at our required position of ventilation or
+                light etc..</p>
+            <p>Double hung windows consist of pair of shutters attached to one frame. The shutters are arranged one above the other.
+               These two shutters can slide vertically with in the frame. So, we can open the windows on top or at bottom to our required level.To
+               operate the double hung windows, a chain or cord consisting metal weights is metal provided which is connected over pulleys. So, by
+               pulling the weights of cord the shutters can move vertically. Then we can fix the windows at our required position of ventilation or
+               light etc..</p>
+        </div>
+        <div class="column side">
+            <h2>Side</h2>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+        </div>
+    </div>
+</body>
+</html>

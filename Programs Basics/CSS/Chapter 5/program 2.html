@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legend</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background-color: powderblue;
+        }
+        /*header/blog title*/
+        .headerh1{
+            font-size: 50px;
+        }
+        /*style the top navigation bar*/
+        .topnav{
+            overflow: hidden;
+            background-color: brown;
+        }
+        /*style the topnav links*/
+        .topnav a{
+            float:left;
+            display: block;
+            color: aquamarine;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: black;
+        }
+        /*change color on hover*/
+        .topnav a:hover{
+            background-color: blueviolet;
+            color:blanchedalmond
+        }
+        /*create two uequal columns that floats next to each other*/
+        /*left column*/
+        .leftcolumns{
+            float: left;
+            width: 75%;
+        }
+        /*right columns*/
+        .rightcolumns{
+            float: left;
+            width: 25%;
+            background-color: coral;
+            padding-left: 20px;
+        }
+        /*fake image*/
+        .fakeimg{
+            background-color: crimson;
+            width: 100%;
+            padding: 20px;
+        }
+        /*Add a card effect for articles*/
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /*clear floats after the columns*/
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /*footer*/
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background-color: coral;
+            margin-top: 20px;
+        }
+        /* Responsive layout - when the screen is less than 800px wipe, make the two columns
+        stack on top of each other instead of next to each other  */
+        @media screen and (max-width:800px){
+            .leftcolumns,.rightcolumns{
+                width: 100%;
+                padding: 0;
+            }
+        }
+        /* Responsive layout - when the screen is less than 400px wipe, make the navigation links
+        stack on top of each other instead of next to each other  */
+        @media screen and (max-width:300px){
+            .topnav a{
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+    <div class="topnav">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#" style="float: right;">link</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>title discription,dec 7,2017</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>Some text.....</p>
+                <p>Deadbolts Lock are a top choice for securing main entrances to homes as they significantly reduce the risk of theft
+                or burglary.Additionally, they cannot be manipulated from the outside with tools or knives. Among deadbolt types,
+                single-cylinder deadbolts are the most straightforward, easily operated with a key from one side.</p>
+            </div>
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>title discription,sep,2017</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>Some text.....</p>
+                <p>Deadbolts Lock are a top choice for securing main entrances to homes as they significantly reduce the risk of theft
+                or burglary.Additionally, they cannot be manipulated from the outside with tools or knives. Among deadbolt types,
+                single-cylinder deadbolts are the most straightforward, easily operated with a key from one side.</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height: 100px;">Image</div>
+                <p>Deadbolts Lock are a top choice for securing main entrances to homes as they significantly reduce the risk of theft
+                or burglary.</p>
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg"><p>Image</p></div>
+                <div class="fakeimg"><p>Image</p></div>
+                <div class="fakeimg"><p>Image</p></div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>some text....</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
