@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legend</title>
+</head>
+<body>
+    <h1>The input formaction attribute</h1>
+    <p>The formaction attribute specifies the URL of a file that will process the input
+        when the form is submitted.
+    </p>
+    <form action="/action_page.html">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="iname">Last name:</label>
+        <input type="text" id="iname" name="iname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formaction="/action_page.html" value="Submit as admin">
+    </form>
+</body>
+</html>
