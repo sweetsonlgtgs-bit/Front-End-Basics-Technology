@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legend</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            border: 1px solid red;
+            padding: 15px;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 15px;
+            border: 1px solid red;
+        }
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>chania</h1>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <ul>
+                <li>don</li>
+                <li>cat</li>
+                <li>dog</li>
+                <li>pig</li>
+            </ul>
+        </div>
+        <div class="col-9">
+            <h1>The Pet</h1>
+            <p>Door locks provide essential security and privacy, acting as an important barrier to protect your property.Whether
+                you're refurbishing a new home or upgrading existing locks, there are a wide range of options to consider</p>
+            <p>Securing your home is a top priority, as it protects your valuable assets. To get the best security, make sure your doors are
+                equipped with high-quality locks.</p>
+        </div>
+    </div>
+</body>
+</html>
